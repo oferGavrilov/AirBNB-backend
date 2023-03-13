@@ -76,3 +76,62 @@
 13.3.2023, 19:17:12 - DEBUG - Getting stays 
 13.3.2023, 19:17:35 - DEBUG - Getting stays 
 13.3.2023, 19:18:15 - DEBUG - Getting stays 
+13.3.2023, 20:34:20 - INFO - Server is running on port: 4200 
+13.3.2023, 20:35:05 - DEBUG - Getting stays 
+13.3.2023, 20:35:34 - DEBUG - Getting stays 
+13.3.2023, 20:35:34 - ERROR - cannot find stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:34 - ERROR - Failed to get stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:53 - DEBUG - Getting stays 
+13.3.2023, 20:35:53 - ERROR - Failed to get stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:53 - ERROR - cannot find stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:54 - DEBUG - Getting stays 
+13.3.2023, 20:35:54 - ERROR - cannot find stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:54 - ERROR - Failed to get stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:55 - DEBUG - Getting stays 
+13.3.2023, 20:35:55 - ERROR - cannot find stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:55 - ERROR - Failed to get stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:55 - ERROR - cannot find stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:55 - ERROR - Failed to get stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:35:55 - DEBUG - Getting stays 
+13.3.2023, 20:36:02 - DEBUG - Getting stays 
+13.3.2023, 20:36:02 - ERROR - cannot find stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:36:02 - ERROR - Failed to get stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:36:04 - ERROR - cannot find stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:36:04 - DEBUG - Getting stays 
+13.3.2023, 20:36:04 - ERROR - Failed to get stays | TypeError: Cannot set properties of undefined (setting 'address') 
+13.3.2023, 20:37:42 - INFO - Server is running on port: 4200 
+13.3.2023, 20:38:17 - DEBUG - Getting stays 
+13.3.2023, 20:38:40 - DEBUG - Getting stays 
+13.3.2023, 20:38:43 - DEBUG - Getting stays 
+13.3.2023, 20:52:22 - INFO - Server is running on port: 4200 
+13.3.2023, 20:52:36 - INFO - Server is running on port: 4200 
+13.3.2023, 20:52:43 - DEBUG - Getting stays 
+13.3.2023, 20:53:58 - INFO - Server is running on port: 4200 
+13.3.2023, 20:57:19 - DEBUG - Getting stays 
+13.3.2023, 20:57:19 - ERROR - cannot find stays | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+13.3.2023, 20:57:19 - ERROR - Failed to get stays | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+13.3.2023, 20:57:22 - DEBUG - Getting stays 
+13.3.2023, 20:57:22 - ERROR - cannot find stays | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+13.3.2023, 20:57:22 - ERROR - Failed to get stays | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+13.3.2023, 20:58:04 - INFO - Server is running on port: 4200 
+13.3.2023, 20:58:07 - DEBUG - Getting stays 
+13.3.2023, 20:58:55 - DEBUG - Getting stays 
+13.3.2023, 20:59:41 - INFO - Server is running on port: 4200 
+13.3.2023, 20:59:47 - DEBUG - Getting stays 
+13.3.2023, 21:00:24 - INFO - Server is running on port: 4200 
+13.3.2023, 21:00:58 - INFO - Server is running on port: 4200 
+13.3.2023, 21:01:47 - DEBUG - Getting stays 
+13.3.2023, 21:01:48 - ERROR - cannot find stays | MongoServerError: $in needs an array 
+13.3.2023, 21:01:48 - ERROR - Failed to get stays | MongoServerError: $in needs an array 
+13.3.2023, 21:02:14 - INFO - Server is running on port: 4200 
+13.3.2023, 21:02:19 - DEBUG - Getting stays 
+13.3.2023, 21:02:41 - INFO - Server is running on port: 4200 
+13.3.2023, 21:02:51 - INFO - Server is running on port: 4200 
+13.3.2023, 21:11:19 - INFO - Server is running on port: 4200 
+13.3.2023, 21:13:43 - INFO - Server is running on port: 4200 
+13.3.2023, 21:16:56 - INFO - Server is running on port: 4200 
+13.3.2023, 21:17:08 - INFO - Server is running on port: 4200 
+13.3.2023, 21:17:40 - INFO - Server is running on port: 4200 
+13.3.2023, 21:18:09 - INFO - Server is running on port: 4200 
+13.3.2023, 21:18:28 - INFO - Server is running on port: 4200 
+13.3.2023, 21:18:53 - INFO - Server is running on port: 4200 
