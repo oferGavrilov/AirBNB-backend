@@ -1,4 +1,4 @@
- export interface Stay {
+export interface Stay {
     _id: string,
     type: string,
     name: string,
@@ -62,10 +62,17 @@ export interface StatReviews {
 }
 
 export interface StayFilter {
-  likeByUser: string,
-  place: string,
-  label: string,
-  price: number,
-  hostId: string,
-  isPetAllowed: boolean
+    likeByUser: string,
+    place: string,
+    label: string,
+    hostId: string,
+    isPetAllowed: boolean
+}
+
+export interface StayCriteria {
+    likeByUsers?: any,
+    address?: any,
+    labels?: any,
+    host?: { _id?: any } | undefined,
+    isPetAllowed?: boolean
 }

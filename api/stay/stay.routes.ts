@@ -1,8 +1,6 @@
 var express = require('express')
-// import express from 'express'
-// const { getStays, getStayById, addStay, updateStay} = require('./stay.controller')
 const stayController = require('./stay.controller')
-const router = express.Router()
+var router = express.Router()
 
 router.get('/', stayController.getStays)
 router.get('/:stayId', stayController.getStayById)

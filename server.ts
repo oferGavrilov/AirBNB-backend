@@ -1,10 +1,8 @@
-var express = require('express')
-// import express from 'express'
+import express from 'express'
 const cors = require('cors')
 const app = express()
 const cookieParser = require('cookie-parser')
 const path = require('path')
-
 
 app.use(express.static('public'))
 app.use(cookieParser())
@@ -24,10 +22,12 @@ if (process.env.NODE_ENV === 'production') {
 const stayRoutes = require('./api/stay/stay.routes')
 const orderRoutes = require('./api/order/order.routes')
 const userRoutes = require('./api/user/user.routes')
+const authRoutes = require('./api/auth/auth.routes')
 
 app.use('/api/stay', stayRoutes)
-// app.use('/api/order', orderRoutes)
-// app.use('/api/user', userRoutes)
+app.use('/api/order', orderRoutes)
+app.use('/api/user', userRoutes)
+app.use('/api/auth', authRoutes)
 
 app.get('/**', (_: any, res: any) => {
       res.sendFile(path.join(__dirname, 'public', 'index.html'))

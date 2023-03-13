@@ -3,8 +3,9 @@ var logger = require('../../services/logger.service')
 
 async function getStays(req: any, res: any) {
       try {
+            const filterBy = req.query
             logger.debug('Getting stays')
-            const stays = await stayService.query() 
+            const stays = await stayService.query(filterBy) 
             res.json(stays)
       } catch (err) {
             logger.error('Failed to get stays', err)

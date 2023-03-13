@@ -1,11 +1,13 @@
-const dbService = require('../../services/db.service')
-const ObjectId = require('mongodb').ObjectId
-const Stay = require('../.././models/stay.model')
+import { Stay, StayCriteria, StayFilter } from "../../models/stay.model"
+
+var dbService = require('../../services/db.service')
+var ObjectId = require('mongodb').ObjectId
 var logger = require('../../services/logger.service')
 
-async function query() {
+async function query(filterBy: StayFilter) {
     try {
-        const criteria = {}
+        const criteria = _buildCriteria(filterBy)
+        console.log(criteria)
         const collection = await dbService.getCollection('stay')
         var stays = await collection.find(criteria).toArray()
         return stays
@@ -18,8 +20,8 @@ async function query() {
 async function getById(stayId: string) {
     try {
         const collection = await dbService.getCollection('stay')
-        const stay= collection.findOne({ _id: new ObjectId(stayId) })
-        console.log('stay',stay)
+        const stay = collection.findOne({ _id: new ObjectId(stayId) })
+        console.log('stay', stay)
         return stay
     } catch (err) {
         logger.error(`while finding stay ${stayId}`, err)
@@ -27,7 +29,7 @@ async function getById(stayId: string) {
     }
 }
 
-async function add(stay: typeof Stay) {
+async function add(stay: Stay) {
     try {
         const collection = await dbService.getCollection('stay')
         await collection.insertOne(stay)
@@ -38,9 +40,9 @@ async function add(stay: typeof Stay) {
     }
 }
 
-async function update(stay: typeof Stay) {
+async function update(stay: Stay) {
     try {
-        const stayToSave = {...stay}
+        const stayToSave: any = { ...stay }
         delete stayToSave._id
         const collection = await dbService.getCollection('stay')
         await collection.updateOne({ _id: ObjectId(stay._id) }, { $set: stayToSave })
@@ -49,6 +51,35 @@ async function update(stay: typeof Stay) {
         logger.error(`cannot update stay ${stay._id}`, err)
         throw err
     }
+}
+
+function _filter(stays: Stay[], filterBy: StayFilter) {
+    if (filterBy.likeByUser) stays = stays.filter(stay => stay.likedByUsers.includes(filterBy.likeByUser))
+    if (filterBy.hostId) stays = stays.filter(stay => stay.host._id === filterBy.hostId)
+    if (filterBy.label) stays = stays.filter(stay => stay.labels?.includes(filterBy.label))
+    if (filterBy.place) {
+        const regex = new RegExp(filterBy.place, 'i')
+        stays = stays.filter(stay => regex.test(stay.loc.address))
+    }
+    return stays
+}
+
+function _buildCriteria(filterBy: StayFilter) {
+    const criteria: StayCriteria ={}
+    // if (filterBy?.place) {
+    //     criteria.address = { $regex: filterBy.place, $options: 'i' }
+    // }
+    if (filterBy?.likeByUser) {
+        criteria.likeByUsers = { tags: filterBy.likeByUser }
+    }
+    if (filterBy?.label) {
+        criteria.labels = { tags: filterBy.label }
+    }
+
+    // if (filterBy?.hostId) {
+    //     criteria.host._id = ObjectId(filterBy.hostId)
+    // }
+    return criteria
 }
 
 module.exports = {
