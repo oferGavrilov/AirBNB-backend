@@ -1,0 +1,44 @@
+13.3.2023, 15:22:05 - INFO - Server is running on port: 4200 
+13.3.2023, 15:22:12 - INFO - Server is running on port: 4200 
+13.3.2023, 16:01:11 - INFO - Server is running on port: 4200 
+13.3.2023, 16:01:29 - INFO - Server is running on port: 4200 
+13.3.2023, 16:01:37 - INFO - Server is running on port: 4200 
+13.3.2023, 16:02:01 - INFO - Server is running on port: 4200 
+13.3.2023, 16:02:54 - INFO - Server is running on port: 4200 
+13.3.2023, 16:03:57 - DEBUG - Getting stays 
+13.3.2023, 16:04:20 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:05:43 - INFO - Server is running on port: 4200 
+13.3.2023, 16:05:46 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:06:00 - INFO - Server is running on port: 4200 
+13.3.2023, 16:06:01 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:06:05 - INFO - Server is running on port: 4200 
+13.3.2023, 16:06:13 - INFO - Server is running on port: 4200 
+13.3.2023, 16:06:20 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:06:39 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:06:46 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:07:28 - DEBUG - Getting stays 
+13.3.2023, 16:07:50 - DEBUG - Getting stays 
+13.3.2023, 16:08:05 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:09:19 - INFO - Server is running on port: 4200 
+13.3.2023, 16:09:21 - INFO - Server is running on port: 4200 
+13.3.2023, 16:09:26 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:10:20 - INFO - Server is running on port: 4200 
+13.3.2023, 16:11:05 - INFO - Server is running on port: 4200 
+13.3.2023, 16:11:08 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:11:38 - INFO - Server is running on port: 4200 
+13.3.2023, 16:11:45 - INFO - Server is running on port: 4200 
+13.3.2023, 16:11:47 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:12:17 - INFO - Server is running on port: 4200 
+13.3.2023, 16:12:19 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:12:37 - INFO - Server is running on port: 4200 
+13.3.2023, 16:12:39 - ERROR - Failed to get stay | ReferenceError: logger is not defined 
+13.3.2023, 16:12:55 - INFO - Server is running on port: 4200 
+13.3.2023, 16:12:57 - ERROR - while finding stay 640f1a201c1c4cc4add67107 | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+13.3.2023, 16:12:57 - ERROR - Failed to get stay | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+13.3.2023, 16:13:39 - INFO - Server is running on port: 4200 
+13.3.2023, 16:13:42 - ERROR - Failed to get stay | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+13.3.2023, 16:13:47 - DEBUG - Getting stays 
+13.3.2023, 16:13:50 - ERROR - Failed to get stay | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+13.3.2023, 16:14:08 - INFO - Server is running on port: 4200 
+13.3.2023, 16:14:43 - INFO - Server is running on port: 4200 
+13.3.2023, 16:21:47 - DEBUG - Getting stays 
