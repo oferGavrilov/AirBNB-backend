@@ -1,4 +1,4 @@
-import { Stay, StayCriteria, StayFilter } from "../../models/stay.model"
+import { Stay, StayFilter } from "../../models/stay.model"
 
 var dbService = require('../../services/db.service')
 var ObjectId = require('mongodb').ObjectId
@@ -65,20 +65,19 @@ function _filter(stays: Stay[], filterBy: StayFilter) {
 }
 
 function _buildCriteria(filterBy: StayFilter) {
-    const criteria: StayCriteria ={}
-    // if (filterBy?.place) {
-    //     criteria.address = { $regex: filterBy.place, $options: 'i' }
-    // }
+    const criteria: any = {}
+    if (filterBy?.place) {
+        criteria['loc.address'] = { $regex: filterBy.place, $options: 'i' }
+    }
     if (filterBy?.likeByUser) {
-        criteria.likeByUsers = { tags: filterBy.likeByUser }
+        criteria.likeByUsers = { $in: [filterBy.likeByUser] }
     }
     if (filterBy?.label) {
-        criteria.labels = { tags: filterBy.label }
+        criteria.labels = { $in: [filterBy.label] }
     }
-
-    // if (filterBy?.hostId) {
-    //     criteria.host._id = ObjectId(filterBy.hostId)
-    // }
+    if (filterBy?.hostId) {
+        criteria['host._id'] = filterBy.hostId
+    }
     return criteria
 }
 

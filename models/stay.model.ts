@@ -68,11 +68,3 @@ export interface StayFilter {
     hostId: string,
     isPetAllowed: boolean
 }
-
-export interface StayCriteria {
-    likeByUsers?: any,
-    address?: any,
-    labels?: any,
-    host?: { _id?: any } | undefined,
-    isPetAllowed?: boolean
-}
