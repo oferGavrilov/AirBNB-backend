@@ -67,4 +67,4 @@ export interface StayFilter {
     label: string,
     hostId: string,
     isPetAllowed: boolean
-}
+} 
