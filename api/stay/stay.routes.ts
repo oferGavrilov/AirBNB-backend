@@ -5,6 +5,6 @@ var router = express.Router()
 router.get('/', stayController.getStays)
 router.get('/:stayId', stayController.getStayById)
 router.post('/', stayController.addStay)
-router.put('/:stayId', stayController.updateStay)
+router.put('/', stayController.updateStay)
 
 module.exports = router

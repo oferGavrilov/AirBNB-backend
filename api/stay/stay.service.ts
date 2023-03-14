@@ -7,7 +7,6 @@ var logger = require('../../services/logger.service')
 async function query(filterBy: StayFilter) {
     try {
         const criteria = _buildCriteria(filterBy)
-        console.log(criteria)
         const collection = await dbService.getCollection('stay')
         var stays = await collection.find(criteria).toArray()
         return stays
@@ -45,7 +44,7 @@ async function update(stay: Stay) {
         const stayToSave: any = { ...stay }
         delete stayToSave._id
         const collection = await dbService.getCollection('stay')
-        await collection.updateOne({ _id: ObjectId(stay._id) }, { $set: stayToSave })
+        await collection.updateOne({ _id: new ObjectId(stay._id) }, { $set: stayToSave })
         return stay
     } catch (err) {
         logger.error(`cannot update stay ${stay._id}`, err)
