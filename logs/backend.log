@@ -136,3 +136,95 @@
 13.3.2023, 21:18:28 - INFO - Server is running on port: 4200 
 13.3.2023, 21:18:53 - INFO - Server is running on port: 4200 
 14.3.2023, 14:14:54 - INFO - Server is running on port: 4200 
+14.3.2023, 14:42:41 - DEBUG - Getting stays 
+14.3.2023, 14:42:41 - DEBUG - Getting orders 
+14.3.2023, 14:57:02 - DEBUG - Getting stays 
+14.3.2023, 14:57:02 - DEBUG - Getting orders 
+14.3.2023, 14:58:01 - DEBUG - Getting stays 
+14.3.2023, 14:58:01 - DEBUG - Getting orders 
+14.3.2023, 14:58:27 - DEBUG - Getting stays 
+14.3.2023, 14:58:28 - DEBUG - Getting stays 
+14.3.2023, 14:59:18 - DEBUG - Getting stays 
+14.3.2023, 14:59:36 - DEBUG - Getting stays 
+14.3.2023, 14:59:37 - DEBUG - Getting stays 
+14.3.2023, 15:00:12 - DEBUG - auth.service - signup with username: idan, fullname: idan david 
+14.3.2023, 15:00:12 - DEBUG - Getting stays 
+14.3.2023, 15:00:12 - ERROR - Failed to signup Username already taken 
+14.3.2023, 15:01:33 - INFO - Server is running on port: 3030 
+14.3.2023, 15:02:15 - DEBUG - Getting stays 
+14.3.2023, 15:02:18 - DEBUG - Getting stays 
+14.3.2023, 15:02:51 - INFO - Server is running on port: 3030 
+14.3.2023, 15:04:57 - INFO - Server is running on port: 3030 
+14.3.2023, 15:05:32 - DEBUG - auth.service - signup with username: idan, fullname: idan david 
+14.3.2023, 15:05:32 - DEBUG - Getting stays 
+14.3.2023, 15:05:33 - DEBUG - auth.route - new account created: {"username":"idan","password":"$2b$10$L0wDMBapKHBV7KxrqJXbEuA8lyFiLGLj5lPcdU7WZBvwvR9BsYe.K","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg","_id":"6410711d7aae5eb4b8c3218b"} 
+14.3.2023, 15:05:33 - DEBUG - auth.service - login with username: idan 
+14.3.2023, 15:05:34 - INFO - User signup: | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+14.3.2023, 15:05:44 - DEBUG - Getting stays 
+14.3.2023, 15:05:46 - DEBUG - Getting stays 
+14.3.2023, 15:07:31 - DEBUG - Getting stays 
+14.3.2023, 15:07:32 - DEBUG - Getting stays 
+14.3.2023, 15:09:56 - DEBUG - Getting stays 
+14.3.2023, 15:09:56 - DEBUG - Getting stays 
+14.3.2023, 15:10:10 - DEBUG - auth.service - login with username: idan 
+14.3.2023, 15:10:10 - DEBUG - Getting stays 
+14.3.2023, 15:10:10 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+14.3.2023, 15:10:57 - DEBUG - Getting stays 
+14.3.2023, 15:10:58 - DEBUG - Getting stays 
+14.3.2023, 15:12:18 - DEBUG - Getting stays 
+14.3.2023, 15:12:19 - DEBUG - Getting stays 
+14.3.2023, 15:12:30 - DEBUG - auth.service - login with username: idan 
+14.3.2023, 15:12:30 - DEBUG - Getting stays 
+14.3.2023, 15:12:30 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+14.3.2023, 15:12:36 - DEBUG - Getting stays 
+14.3.2023, 15:19:17 - DEBUG - Getting stays 
+14.3.2023, 15:19:20 - DEBUG - Getting stays 
+14.3.2023, 15:19:35 - DEBUG - auth.service - login with username: idan 
+14.3.2023, 15:19:35 - DEBUG - Getting stays 
+14.3.2023, 15:19:35 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+14.3.2023, 15:19:41 - DEBUG - Getting stays 
+14.3.2023, 15:19:51 - DEBUG - Getting stays 
+14.3.2023, 15:19:54 - DEBUG - Getting orders 
+14.3.2023, 15:19:56 - DEBUG - Getting orders 
+14.3.2023, 15:21:55 - DEBUG - Getting stays 
+14.3.2023, 15:22:07 - DEBUG - Getting stays 
+14.3.2023, 15:22:07 - DEBUG - Getting stays 
+14.3.2023, 15:22:25 - DEBUG - Getting stays 
+14.3.2023, 15:22:26 - DEBUG - Getting stays 
+14.3.2023, 15:22:32 - DEBUG - Getting stays 
+14.3.2023, 15:22:33 - DEBUG - Getting stays 
+14.3.2023, 15:22:45 - DEBUG - Getting stays 
+14.3.2023, 15:22:48 - DEBUG - Getting stays 
+14.3.2023, 15:25:32 - DEBUG - Getting stays 
+14.3.2023, 15:26:01 - DEBUG - Getting stays 
+14.3.2023, 15:26:04 - DEBUG - Getting stays 
+14.3.2023, 15:27:41 - INFO - Server is running on port: 3030 
+14.3.2023, 15:27:44 - DEBUG - Getting stays 
+14.3.2023, 15:29:01 - DEBUG - Getting stays 
+14.3.2023, 15:30:48 - DEBUG - Getting stays 
+14.3.2023, 15:30:52 - DEBUG - Getting stays 
+14.3.2023, 15:31:42 - INFO - Server is running on port: 3030 
+14.3.2023, 15:32:12 - DEBUG - Getting stays 
+14.3.2023, 15:32:12 - DEBUG - Getting stays 
+14.3.2023, 15:32:48 - DEBUG - Getting stays 
+14.3.2023, 15:32:48 - DEBUG - Getting stays 
+14.3.2023, 15:32:55 - DEBUG - Getting orders 
+14.3.2023, 15:33:18 - DEBUG - Getting stays 
+14.3.2023, 15:34:03 - DEBUG - Getting stays 
+14.3.2023, 15:34:03 - DEBUG - Getting stays 
+14.3.2023, 15:34:08 - DEBUG - Getting stays 
+14.3.2023, 15:34:08 - DEBUG - Getting stays 
+14.3.2023, 15:34:28 - DEBUG - Getting stays 
+14.3.2023, 15:34:56 - DEBUG - Getting stays 
+14.3.2023, 15:34:56 - DEBUG - Getting stays 
+14.3.2023, 15:35:02 - DEBUG - Getting stays 
+14.3.2023, 15:35:15 - DEBUG - Getting stays 
+14.3.2023, 15:35:31 - DEBUG - Getting stays 
+14.3.2023, 15:35:31 - DEBUG - Getting stays 
+14.3.2023, 15:35:47 - DEBUG - Getting stays 
+14.3.2023, 15:35:47 - DEBUG - Getting stays 
+14.3.2023, 15:36:24 - DEBUG - Getting stays 
+14.3.2023, 15:37:34 - DEBUG - Getting stays 
+14.3.2023, 15:37:43 - DEBUG - Getting stays 
+14.3.2023, 15:37:44 - DEBUG - Getting stays 
+14.3.2023, 15:38:29 - DEBUG - Getting stays 
