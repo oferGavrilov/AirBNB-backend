@@ -8,7 +8,7 @@ async function query(filterBy: StayFilter) {
     try {
         const criteria = _buildCriteria(filterBy)
         const collection = await dbService.getCollection('stay')
-        var stays = await collection.find(criteria).toArray()
+        const stays = await collection.find(criteria).toArray()
         return stays
     } catch (err) {
         logger.error('cannot find stays', err)
@@ -20,7 +20,6 @@ async function getById(stayId: string) {
     try {
         const collection = await dbService.getCollection('stay')
         const stay = collection.findOne({ _id: new ObjectId(stayId) })
-        console.log('stay', stay)
         return stay
     } catch (err) {
         logger.error(`while finding stay ${stayId}`, err)
@@ -34,7 +33,7 @@ async function add(stay: Stay) {
         await collection.insertOne(stay)
         return stay
     } catch (err) {
-        logger.error('cannot insert board', err)
+        logger.error('cannot insert stay', err)
         throw err
     }
 }
@@ -69,7 +68,7 @@ function _buildCriteria(filterBy: StayFilter) {
         criteria['loc.address'] = { $regex: filterBy.place, $options: 'i' }
     }
     if (filterBy?.likeByUser) {
-        criteria.likeByUsers = { $in: [filterBy.likeByUser] }
+        criteria.likedByUsers = { $in: [filterBy.likeByUser] }
     }
     if (filterBy?.label) {
         criteria.labels = { $in: [filterBy.label] }
