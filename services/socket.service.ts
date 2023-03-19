@@ -34,7 +34,7 @@ function setupSocketAPI(http: string) {
             })
             socket.on('order-coming-event', (order: Order) => {
                   logger.info(`New order invite from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
-                  gIo.emit('order-coming-emit', (order))
+                  gIo.to(order.host._id).emit('order-coming-emit', (order))
             })
             socket.on('order-update-event', (order: Order) => {
                   logger.info(`New order status update from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)

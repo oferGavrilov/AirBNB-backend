@@ -2715,3 +2715,307 @@
 19.3.2023, 19:44:05 - DEBUG - Getting stays 
 19.3.2023, 19:47:54 - INFO - Server is running on port: 3030 
 19.3.2023, 19:47:54 - INFO - New connected socket [id: kIOoHnrOWqYigC9zAAAB] 
+19.3.2023, 19:55:24 - DEBUG - Getting stays 
+19.3.2023, 19:55:24 - INFO - New connected socket [id: S1s3N4gk6FoT-liyAAAD] 
+19.3.2023, 19:55:25 - DEBUG - Getting stays 
+19.3.2023, 19:55:45 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 19:55:45 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 19:55:45 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: S1s3N4gk6FoT-liyAAAD] 
+19.3.2023, 19:55:45 - DEBUG - Getting stays 
+19.3.2023, 19:56:05 - INFO - Removing socket.userId for socket [id: kIOoHnrOWqYigC9zAAAB] 
+19.3.2023, 19:56:05 - DEBUG - Getting stays 
+19.3.2023, 19:56:19 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 19:56:19 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 19:56:19 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: kIOoHnrOWqYigC9zAAAB] 
+19.3.2023, 19:56:19 - DEBUG - Getting stays 
+19.3.2023, 20:11:16 - INFO - New order invite from socket [id: S1s3N4gk6FoT-liyAAAD], emitting to topic undefined 
+19.3.2023, 20:15:27 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:15:27 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:15:27 - DEBUG - Getting stays 
+19.3.2023, 20:15:27 - INFO - New connected socket [id: D0p4893HClN8_J7vAAAF] 
+19.3.2023, 20:15:27 - DEBUG - Getting stays 
+19.3.2023, 20:15:27 - INFO - New connected socket [id: z2RZ796GVP4Wbo14AAAH] 
+19.3.2023, 20:15:33 - INFO - New order invite from socket [id: D0p4893HClN8_J7vAAAF], emitting to topic undefined 
+19.3.2023, 20:15:44 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:15:45 - DEBUG - Getting stays 
+19.3.2023, 20:15:45 - INFO - New connected socket [id: 3GE1K7-0-bDbDIJfAAAJ] 
+19.3.2023, 20:15:47 - DEBUG - Getting stays 
+19.3.2023, 20:15:57 - INFO - New order invite from socket [id: D0p4893HClN8_J7vAAAF], emitting to topic undefined 
+19.3.2023, 20:16:23 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:16:23 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:16:23 - DEBUG - Getting stays 
+19.3.2023, 20:16:23 - INFO - New connected socket [id: zoeLpu_LsBYRd6fyAAAL] 
+19.3.2023, 20:16:23 - DEBUG - Getting stays 
+19.3.2023, 20:16:23 - INFO - New connected socket [id: fiSX4rSY419t1TAjAAAN] 
+19.3.2023, 20:16:26 - INFO - New order invite from socket [id: zoeLpu_LsBYRd6fyAAAL], emitting to topic undefined 
+19.3.2023, 20:18:51 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:18:51 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:18:52 - DEBUG - Getting stays 
+19.3.2023, 20:18:52 - INFO - New connected socket [id: X0edtAbg5fOu5BYkAAAP] 
+19.3.2023, 20:18:52 - DEBUG - Getting stays 
+19.3.2023, 20:18:52 - INFO - New connected socket [id: F2p1X20sJGq--ibIAAAR] 
+19.3.2023, 20:18:57 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:18:57 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:18:57 - DEBUG - Getting stays 
+19.3.2023, 20:18:57 - INFO - New connected socket [id: WgyaHBOGFoFj_1xOAAAT] 
+19.3.2023, 20:18:57 - DEBUG - Getting stays 
+19.3.2023, 20:18:57 - INFO - New connected socket [id: IcKGGZH_171cnCC_AAAV] 
+19.3.2023, 20:19:13 - INFO - New order invite from socket [id: WgyaHBOGFoFj_1xOAAAT], emitting to topic undefined 
+19.3.2023, 20:19:17 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:19:18 - DEBUG - Getting stays 
+19.3.2023, 20:19:18 - INFO - New connected socket [id: 0Ne0iJY1slMflSviAAAX] 
+19.3.2023, 20:19:20 - DEBUG - Getting stays 
+19.3.2023, 20:19:26 - INFO - New order invite from socket [id: WgyaHBOGFoFj_1xOAAAT], emitting to topic undefined 
+19.3.2023, 20:19:29 - DEBUG - Getting stays 
+19.3.2023, 20:19:32 - INFO - Removing socket.userId for socket [id: WgyaHBOGFoFj_1xOAAAT] 
+19.3.2023, 20:19:32 - DEBUG - Getting stays 
+19.3.2023, 20:19:41 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:19:42 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:19:42 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: WgyaHBOGFoFj_1xOAAAT] 
+19.3.2023, 20:19:42 - DEBUG - Getting stays 
+19.3.2023, 20:19:44 - DEBUG - Getting stays 
+19.3.2023, 20:19:44 - INFO - Removing socket.userId for socket [id: 0Ne0iJY1slMflSviAAAX] 
+19.3.2023, 20:19:45 - DEBUG - Getting stays 
+19.3.2023, 20:19:53 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:19:53 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:19:53 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: 0Ne0iJY1slMflSviAAAX] 
+19.3.2023, 20:19:53 - DEBUG - Getting stays 
+19.3.2023, 20:20:10 - INFO - New order invite from socket [id: WgyaHBOGFoFj_1xOAAAT], emitting to topic undefined 
+19.3.2023, 20:22:53 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:22:53 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:22:53 - DEBUG - Getting stays 
+19.3.2023, 20:22:53 - INFO - New connected socket [id: 4SJM0sYoyk9IeXLOAAAZ] 
+19.3.2023, 20:22:53 - DEBUG - Getting stays 
+19.3.2023, 20:22:53 - INFO - New connected socket [id: c8uwfjH8gVEV5bQaAAAb] 
+19.3.2023, 20:22:54 - DEBUG - Getting stays 
+19.3.2023, 20:22:59 - INFO - New order invite from socket [id: 4SJM0sYoyk9IeXLOAAAZ], emitting to topic undefined 
+19.3.2023, 20:23:02 - DEBUG - Getting stays 
+19.3.2023, 20:23:05 - INFO - Removing socket.userId for socket [id: 4SJM0sYoyk9IeXLOAAAZ] 
+19.3.2023, 20:23:05 - DEBUG - Getting stays 
+19.3.2023, 20:23:09 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:23:10 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:23:10 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: 4SJM0sYoyk9IeXLOAAAZ] 
+19.3.2023, 20:23:10 - DEBUG - Getting stays 
+19.3.2023, 20:23:13 - INFO - Removing socket.userId for socket [id: c8uwfjH8gVEV5bQaAAAb] 
+19.3.2023, 20:23:13 - DEBUG - Getting stays 
+19.3.2023, 20:23:18 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:23:18 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:23:18 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: c8uwfjH8gVEV5bQaAAAb] 
+19.3.2023, 20:23:18 - DEBUG - Getting stays 
+19.3.2023, 20:24:36 - INFO - New order invite from socket [id: 4SJM0sYoyk9IeXLOAAAZ], emitting to topic undefined 
+19.3.2023, 20:28:20 - INFO - Server is running on port: 3030 
+19.3.2023, 20:28:20 - INFO - New connected socket [id: LZbR_A9MlUXCMgB_AAAB] 
+19.3.2023, 20:28:20 - INFO - New connected socket [id: fBE6F1wU6fyotJ7pAAAD] 
+19.3.2023, 20:28:23 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:28:23 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:28:23 - DEBUG - Getting stays 
+19.3.2023, 20:28:24 - DEBUG - Getting stays 
+19.3.2023, 20:28:24 - INFO - New connected socket [id: 1P77wj_FUD8SM6aRAAAG] 
+19.3.2023, 20:28:24 - INFO - New connected socket [id: g7n4cDuaWj0R_m11AAAH] 
+19.3.2023, 20:28:25 - DEBUG - Getting stays 
+19.3.2023, 20:28:26 - INFO - Removing socket.userId for socket [id: g7n4cDuaWj0R_m11AAAH] 
+19.3.2023, 20:28:26 - DEBUG - Getting stays 
+19.3.2023, 20:28:28 - DEBUG - Getting stays 
+19.3.2023, 20:28:28 - INFO - Removing socket.userId for socket [id: 1P77wj_FUD8SM6aRAAAG] 
+19.3.2023, 20:28:29 - DEBUG - Getting stays 
+19.3.2023, 20:28:33 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:28:33 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:28:33 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: 1P77wj_FUD8SM6aRAAAG] 
+19.3.2023, 20:28:33 - DEBUG - Getting stays 
+19.3.2023, 20:28:39 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:28:40 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:28:40 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: g7n4cDuaWj0R_m11AAAH] 
+19.3.2023, 20:28:40 - DEBUG - Getting stays 
+19.3.2023, 20:28:53 - INFO - New order invite from socket [id: 1P77wj_FUD8SM6aRAAAG], emitting to topic [object Object] 
+19.3.2023, 20:32:59 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:32:59 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:33:00 - DEBUG - Getting stays 
+19.3.2023, 20:33:00 - DEBUG - Getting stays 
+19.3.2023, 20:33:00 - INFO - New connected socket [id: G6KNV83lbEpYAHyDAAAK] 
+19.3.2023, 20:33:00 - INFO - New connected socket [id: QZBN7ANm07PCQfWkAAAL] 
+19.3.2023, 20:33:01 - DEBUG - Getting stays 
+19.3.2023, 20:33:02 - INFO - Server is running on port: 3030 
+19.3.2023, 20:33:02 - INFO - New connected socket [id: B1z4V3gHOd5K1nn5AAAB] 
+19.3.2023, 20:33:03 - INFO - New connected socket [id: UmuMmSSiKvr6khAeAAAD] 
+19.3.2023, 20:33:05 - INFO - Removing socket.userId for socket [id: B1z4V3gHOd5K1nn5AAAB] 
+19.3.2023, 20:33:05 - DEBUG - Getting stays 
+19.3.2023, 20:33:07 - DEBUG - Getting stays 
+19.3.2023, 20:33:07 - INFO - Removing socket.userId for socket [id: UmuMmSSiKvr6khAeAAAD] 
+19.3.2023, 20:33:08 - DEBUG - Getting stays 
+19.3.2023, 20:33:34 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:33:34 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:33:34 - DEBUG - Getting stays 
+19.3.2023, 20:33:34 - INFO - New connected socket [id: yqdLOIIgrEGpkAfNAAAF] 
+19.3.2023, 20:33:34 - DEBUG - Getting stays 
+19.3.2023, 20:33:34 - INFO - New connected socket [id: hD8jaDkMPuZnG_7ZAAAH] 
+19.3.2023, 20:33:34 - DEBUG - Getting stays 
+19.3.2023, 20:33:35 - DEBUG - Getting stays 
+19.3.2023, 20:33:40 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:33:40 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:33:40 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: yqdLOIIgrEGpkAfNAAAF] 
+19.3.2023, 20:33:40 - DEBUG - Getting stays 
+19.3.2023, 20:33:45 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:33:45 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:33:45 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: hD8jaDkMPuZnG_7ZAAAH] 
+19.3.2023, 20:33:45 - DEBUG - Getting stays 
+19.3.2023, 20:33:57 - INFO - New order invite from socket [id: yqdLOIIgrEGpkAfNAAAF], emitting to topic undefined 
+19.3.2023, 20:39:01 - INFO - Server is running on port: 3030 
+19.3.2023, 20:39:01 - INFO - New connected socket [id: H2GgiVYPpHyFNJoXAAAB] 
+19.3.2023, 20:39:01 - INFO - New connected socket [id: uinsGqNtS3RrG0OaAAAD] 
+19.3.2023, 20:39:06 - INFO - Removing socket.userId for socket [id: uinsGqNtS3RrG0OaAAAD] 
+19.3.2023, 20:39:06 - DEBUG - Getting stays 
+19.3.2023, 20:39:09 - DEBUG - Getting stays 
+19.3.2023, 20:39:10 - INFO - Removing socket.userId for socket [id: H2GgiVYPpHyFNJoXAAAB] 
+19.3.2023, 20:39:10 - DEBUG - Getting stays 
+19.3.2023, 20:39:19 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:39:19 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:39:19 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: H2GgiVYPpHyFNJoXAAAB] 
+19.3.2023, 20:39:19 - DEBUG - Getting stays 
+19.3.2023, 20:39:29 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:39:29 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:39:29 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: uinsGqNtS3RrG0OaAAAD] 
+19.3.2023, 20:39:29 - DEBUG - Getting stays 
+19.3.2023, 20:39:38 - INFO - New order invite from socket [id: H2GgiVYPpHyFNJoXAAAB], emitting to topic undefined 
+19.3.2023, 20:39:54 - DEBUG - Getting stays 
+19.3.2023, 20:39:56 - INFO - Removing socket.userId for socket [id: H2GgiVYPpHyFNJoXAAAB] 
+19.3.2023, 20:39:56 - DEBUG - Getting stays 
+19.3.2023, 20:40:01 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:40:02 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:40:02 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: H2GgiVYPpHyFNJoXAAAB] 
+19.3.2023, 20:40:02 - DEBUG - Getting stays 
+19.3.2023, 20:40:05 - INFO - Removing socket.userId for socket [id: uinsGqNtS3RrG0OaAAAD] 
+19.3.2023, 20:40:05 - DEBUG - Getting stays 
+19.3.2023, 20:40:11 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:40:11 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:40:11 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: uinsGqNtS3RrG0OaAAAD] 
+19.3.2023, 20:40:11 - DEBUG - Getting stays 
+19.3.2023, 20:40:39 - INFO - New order invite from socket [id: uinsGqNtS3RrG0OaAAAD], emitting to topic undefined 
+19.3.2023, 20:40:49 - DEBUG - Getting stays 
+19.3.2023, 20:40:54 - INFO - New order invite from socket [id: H2GgiVYPpHyFNJoXAAAB], emitting to topic undefined 
+19.3.2023, 20:40:57 - DEBUG - Getting stays 
+19.3.2023, 20:41:50 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:41:50 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:41:50 - DEBUG - Getting stays 
+19.3.2023, 20:41:51 - INFO - New connected socket [id: T7BDQ2OgDdkn2FgTAAAF] 
+19.3.2023, 20:41:51 - DEBUG - Getting stays 
+19.3.2023, 20:41:51 - INFO - New connected socket [id: FYUGNX1_GUB3Otd4AAAH] 
+19.3.2023, 20:41:51 - DEBUG - Getting stays 
+19.3.2023, 20:41:54 - DEBUG - Getting stays 
+19.3.2023, 20:41:58 - DEBUG - Getting stays 
+19.3.2023, 20:42:26 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:42:26 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:42:26 - DEBUG - Getting stays 
+19.3.2023, 20:42:26 - INFO - New connected socket [id: zhlyV6_l1Hxwf4XrAAAJ] 
+19.3.2023, 20:42:27 - DEBUG - Getting stays 
+19.3.2023, 20:42:27 - INFO - New connected socket [id: ZLK6MrtE3RHbkbYtAAAL] 
+19.3.2023, 20:42:27 - DEBUG - Getting stays 
+19.3.2023, 20:42:29 - DEBUG - Getting stays 
+19.3.2023, 20:42:40 - INFO - New order invite from socket [id: ZLK6MrtE3RHbkbYtAAAL], emitting to topic undefined 
+19.3.2023, 20:42:50 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:42:50 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:42:50 - DEBUG - Getting stays 
+19.3.2023, 20:42:50 - INFO - New connected socket [id: 2LMPq5L6qPsYDpR9AAAN] 
+19.3.2023, 20:42:50 - DEBUG - Getting stays 
+19.3.2023, 20:42:50 - INFO - New connected socket [id: V9hpzH3QpUuxl9uqAAAP] 
+19.3.2023, 20:42:51 - DEBUG - Getting stays 
+19.3.2023, 20:43:26 - DEBUG - Getting orders 
+19.3.2023, 20:43:30 - DEBUG - Getting orders 
+19.3.2023, 20:43:51 - INFO - New order status update from socket [id: 2LMPq5L6qPsYDpR9AAAN], emitting to topic undefined 
+19.3.2023, 20:44:29 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:44:29 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:44:30 - DEBUG - Getting stays 
+19.3.2023, 20:44:30 - DEBUG - Getting orders 
+19.3.2023, 20:44:30 - INFO - New connected socket [id: 06ItSYCdAtJzDGzYAAAS] 
+19.3.2023, 20:44:30 - DEBUG - Getting stays 
+19.3.2023, 20:44:30 - INFO - New connected socket [id: PxGxKGPTB9DB5mLaAAAT] 
+19.3.2023, 20:44:59 - INFO - Server is running on port: 3030 
+19.3.2023, 20:45:00 - INFO - New connected socket [id: wcJ_5y7ZxJYucDIWAAAC] 
+19.3.2023, 20:45:00 - INFO - New connected socket [id: PK_jYGzqr2P_OB9UAAAD] 
+19.3.2023, 20:45:11 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:45:11 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:45:12 - DEBUG - Getting stays 
+19.3.2023, 20:45:12 - INFO - New connected socket [id: cuSRxTvmX1htxyJzAAAF] 
+19.3.2023, 20:45:12 - DEBUG - Getting stays 
+19.3.2023, 20:45:12 - DEBUG - Getting orders 
+19.3.2023, 20:45:12 - INFO - New connected socket [id: bCu9UA8anPcvW_jfAAAH] 
+19.3.2023, 20:45:19 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:45:19 - DEBUG - Getting stays 
+19.3.2023, 20:45:19 - DEBUG - Getting orders 
+19.3.2023, 20:45:19 - INFO - New connected socket [id: p8AX4jivZxclkHlDAAAJ] 
+19.3.2023, 20:45:23 - DEBUG - Getting stays 
+19.3.2023, 20:45:23 - INFO - Removing socket.userId for socket [id: p8AX4jivZxclkHlDAAAJ] 
+19.3.2023, 20:45:24 - DEBUG - Getting stays 
+19.3.2023, 20:45:24 - DEBUG - Getting stays 
+19.3.2023, 20:45:25 - DEBUG - Getting stays 
+19.3.2023, 20:45:25 - INFO - Removing socket.userId for socket [id: cuSRxTvmX1htxyJzAAAF] 
+19.3.2023, 20:45:25 - DEBUG - Getting stays 
+19.3.2023, 20:45:30 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:45:30 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:45:30 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: cuSRxTvmX1htxyJzAAAF] 
+19.3.2023, 20:45:30 - DEBUG - Getting stays 
+19.3.2023, 20:45:35 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:45:35 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:45:35 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: p8AX4jivZxclkHlDAAAJ] 
+19.3.2023, 20:45:35 - DEBUG - Getting stays 
+19.3.2023, 20:46:03 - INFO - Server is running on port: 3030 
+19.3.2023, 20:46:03 - INFO - New connected socket [id: X3AOYPeUBx3JpwAsAAAB] 
+19.3.2023, 20:46:04 - INFO - New connected socket [id: cX7-KA6ZDzSssGemAAAD] 
+19.3.2023, 20:46:08 - DEBUG - Getting stays 
+19.3.2023, 20:46:10 - INFO - Removing socket.userId for socket [id: X3AOYPeUBx3JpwAsAAAB] 
+19.3.2023, 20:46:11 - DEBUG - Getting stays 
+19.3.2023, 20:46:17 - DEBUG - Getting stays 
+19.3.2023, 20:46:29 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:46:29 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:46:29 - DEBUG - Getting stays 
+19.3.2023, 20:46:29 - INFO - New connected socket [id: khq3pCyV0mZ62DkSAAAF] 
+19.3.2023, 20:46:29 - DEBUG - Getting stays 
+19.3.2023, 20:46:29 - INFO - New connected socket [id: YnDwd-v3QTmtn4bMAAAH] 
+19.3.2023, 20:46:31 - DEBUG - Getting stays 
+19.3.2023, 20:46:44 - DEBUG - Getting stays 
+19.3.2023, 20:46:48 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:46:48 - DEBUG - Getting stays 
+19.3.2023, 20:46:48 - INFO - New connected socket [id: POkl8f86FIO7r1hzAAAJ] 
+19.3.2023, 20:46:49 - DEBUG - Getting stays 
+19.3.2023, 20:46:55 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:46:55 - DEBUG - Getting stays 
+19.3.2023, 20:46:55 - INFO - New connected socket [id: 3Vzh7idCCNVWnzFaAAAL] 
+19.3.2023, 20:46:57 - DEBUG - Getting stays 
+19.3.2023, 20:47:02 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:47:02 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:47:02 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: 3Vzh7idCCNVWnzFaAAAL] 
+19.3.2023, 20:47:02 - DEBUG - Getting stays 
+19.3.2023, 20:47:08 - INFO - Removing socket.userId for socket [id: YnDwd-v3QTmtn4bMAAAH] 
+19.3.2023, 20:47:08 - DEBUG - Getting stays 
+19.3.2023, 20:47:15 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:47:15 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:47:15 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: YnDwd-v3QTmtn4bMAAAH] 
+19.3.2023, 20:47:15 - DEBUG - Getting stays 
+19.3.2023, 20:47:37 - INFO - New order invite from socket [id: 3Vzh7idCCNVWnzFaAAAL], emitting to topic undefined 
+19.3.2023, 20:47:42 - DEBUG - Getting stays 
+19.3.2023, 20:47:49 - INFO - New order invite from socket [id: 3Vzh7idCCNVWnzFaAAAL], emitting to topic undefined 
+19.3.2023, 20:47:51 - DEBUG - Getting stays 
+19.3.2023, 20:48:55 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:48:55 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 20:48:56 - DEBUG - Getting stays 
+19.3.2023, 20:48:56 - DEBUG - Getting stays 
+19.3.2023, 20:48:56 - INFO - New connected socket [id: 8nTfRuZqX1DVzpheAAAO] 
+19.3.2023, 20:48:56 - INFO - New connected socket [id: ftRyZTY9JyDtVcS7AAAP] 
+19.3.2023, 20:48:56 - DEBUG - Getting stays 
+19.3.2023, 20:49:01 - INFO - Removing socket.userId for socket [id: ftRyZTY9JyDtVcS7AAAP] 
+19.3.2023, 20:49:01 - DEBUG - Getting stays 
+19.3.2023, 20:49:05 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 20:49:05 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 20:49:05 - INFO - Setting socket.userId = 64109116d36d072768162be5 for socket [id: ftRyZTY9JyDtVcS7AAAP] 
+19.3.2023, 20:49:05 - DEBUG - Getting stays 
+19.3.2023, 20:49:08 - DEBUG - Getting stays 
+19.3.2023, 20:49:08 - INFO - Removing socket.userId for socket [id: 8nTfRuZqX1DVzpheAAAO] 
+19.3.2023, 20:49:09 - DEBUG - Getting stays 
+19.3.2023, 20:49:12 - DEBUG - auth.service - login with username: idan 
+19.3.2023, 20:49:13 - INFO - User login:  | {"_id":"6410711d7aae5eb4b8c3218b","username":"idan","fullname":"idan david","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678799134/rlkzlayoq0ss6dfst40q.jpg"} 
+19.3.2023, 20:49:13 - INFO - Setting socket.userId = 6410711d7aae5eb4b8c3218b for socket [id: 8nTfRuZqX1DVzpheAAAO] 
+19.3.2023, 20:49:13 - DEBUG - Getting stays 
+19.3.2023, 20:49:34 - DEBUG - Getting stays 
+19.3.2023, 20:49:38 - INFO - New order invite from socket [id: ftRyZTY9JyDtVcS7AAAP], emitting to topic undefined 
+19.3.2023, 20:49:43 - DEBUG - Getting stays 
+19.3.2023, 20:59:59 - INFO - New order invite from socket [id: ftRyZTY9JyDtVcS7AAAP], emitting to topic undefined 
+19.3.2023, 21:00:02 - DEBUG - Getting stays 
