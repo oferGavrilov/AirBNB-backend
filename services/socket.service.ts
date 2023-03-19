@@ -1,3 +1,5 @@
+import { Order } from "../models/order.model"
+
 var logger = require('./logger.service')
 var gIo: any = null
 
@@ -30,26 +32,13 @@ function setupSocketAPI(http: string) {
             socket.on('disconnect', (socket:any) => {
                   logger.info(`Socket disconnected [id: ${socket.id}]`)
             })
-            socket.on('chat-set-topic', (topic:string) => {
-                  if (socket.myTopic === topic) return
-                  if (socket.myTopic) {
-                        socket.leave(socket.myTopic)
-                        logger.info(`Socket is leaving topic ${socket.myTopic} [id: ${socket.id}]`)
-                  }
-                  socket.join(topic)
-                  socket.myTopic = topic
+            socket.on('order-coming-event', (order: Order) => {
+                  logger.info(`New order invite from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
+                  gIo.emit('order-coming-emit', (order))
             })
-            socket.on('chat-send-msg', (msg:string) => {
-                  logger.info(`New chat msg from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
-                  // emits to all sockets:
-                  // gIo.emit('chat addMsg', msg)
-                  // emits only to sockets in the same room
-                  gIo.to(socket.myTopic).emit('chat-add-msg', msg)
-            })
-            socket.on('user-watch', (userId:string) => {
-                  logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
-                  socket.join('watching:' + userId)
-
+            socket.on('order-update-event', (order: Order) => {
+                  logger.info(`New order status update from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
+                  gIo.emit('order-update-emit', (order))
             })
             socket.on('set-user-socket', (userId:string) => {
                   logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
@@ -62,70 +51,3 @@ function setupSocketAPI(http: string) {
 
       })
 }
-
-// function emitTo({ type, data, label }) {
-//       if (label) gIo.to('watching:' + label.toString()).emit(type, data)
-//       else gIo.emit(type, data)
-// }
-
-// async function emitToUser({ type, data, userId }) {
-//       userId = userId.toString()
-//       const socket = await _getUserSocket(userId)
-
-//       console.log('type:', type)
-//       console.log('data:', data)
-//       console.log('userId:', userId)
-
-//       if (socket) {
-//             logger.info(`Emiting event: ${type} to user: ${userId} socket [id: ${socket.id}]`)
-//             socket.emit(type, data)
-//       } else {
-//             logger.info(`No active socket for user: ${userId}`)
-//             // _printSockets()
-//       }
-// }
-
-// If possible, send to all sockets BUT not the current socket 
-// Optionally, broadcast to a room / to all
-// async function broadcast({ type, data, room = null, userId }) {
-//       userId = userId.toString()
-
-//       logger.info(`Broadcasting event: ${type}`)
-//       const excludedSocket = await _getUserSocket(userId)
-//       if (room && excludedSocket) {
-//             logger.info(`Broadcast to room ${room} excluding user: ${userId}`)
-//             excludedSocket.broadcast.to(room).emit(type, data)
-//       } else if (excludedSocket) {
-//             logger.info(`Broadcast to all excluding user: ${userId}`)
-//             excludedSocket.broadcast.emit(type, data)
-//       } else if (room) {
-//             logger.info(`Emit to room: ${room}`)
-//             gIo.to(room).emit(type, data)
-//       } else {
-//             logger.info(`Emit to all`)
-//             gIo.emit(type, data)
-//       }
-// }
-
-// async function _getUserSocket(userId) {
-//     const sockets = await _getAllSockets()
-//     const socket = sockets.find(s => s.userId === userId)
-//     return socket
-// }
-
-// async function _getAllSockets() {
-//     // return all Socket instances
-//     const sockets = await gIo.fetchSockets()
-//     return sockets
-// }
-
-// async function _printSockets() {
-//     const sockets = await _getAllSockets()
-//     console.log(`Sockets: (count: ${sockets.length}):`)
-//     sockets.forEach(_printSocket)
-// }
-
-// function _printSocket(socket) {
-//     console.log(`Socket - socketId: ${socket.id} userId: ${socket.userId}`)
-// }
-
