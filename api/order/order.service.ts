@@ -40,23 +40,7 @@ async function update(order: typeof Order) {
       }
 }
 
-// private _filter(orders: Order[], filterBy: FilterOrder) {
-//       console.log(filterBy)
-//       if (filterBy.term) {
-//         const regex = new RegExp(filterBy.term, 'i')
-//         orders = orders.filter(order => regex.test(order.stay.name) || regex.test(order.host.fullname))
-//       }
-//       if (filterBy.hostId) orders = orders.filter(order => order.host._id === filterBy.hostId)
-//       if (filterBy.buyerId) orders = orders.filter(order => order.buyer._id === filterBy.buyerId)
-//       if (filterBy.status) orders = orders.filter(order => order.status === filterBy.status)
-//       if (filterBy.stayName) orders = orders.filter(order => order.stay.name === filterBy.stayName)
-//       if (filterBy.hostName) orders = orders.filter(order => order.host.fullname === filterBy.hostName)
-//       if (filterBy.totalPrice) orders = orders.filter(order => order.totalPrice === filterBy.totalPrice)
-//       return orders
-//     }
-//   }
-
-  function _buildCriteria(filterBy: FilterOrder) {
+function _buildCriteria(filterBy: FilterOrder) {
       const criteria: any = {}
       if (filterBy.term) {
             const txtCriteria = { $regex: filterBy.term, $options: 'i' }
@@ -65,10 +49,10 @@ async function update(order: typeof Order) {
                         ['stay.name']: txtCriteria
                   },
                   {
-                  ['host.fullname']: txtCriteria
+                        ['host.fullname']: txtCriteria
                   }
             ]
-        }
+      }
       if (filterBy?.hostId) criteria['host._id'] = filterBy.hostId
       if (filterBy?.buyerId) criteria['buyer._id'] = filterBy.buyerId
       if (filterBy?.status) criteria.status = filterBy.status
@@ -76,7 +60,7 @@ async function update(order: typeof Order) {
       if (filterBy?.hostName) criteria['host.fullname'] = filterBy.hostName
       if (filterBy?.totalPrice) criteria.totalPrice = filterBy.totalPrice
       return criteria
-  }
+}
 
 module.exports = {
       query,
