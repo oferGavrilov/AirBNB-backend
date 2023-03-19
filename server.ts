@@ -23,11 +23,13 @@ const stayRoutes = require('./api/stay/stay.routes')
 const orderRoutes = require('./api/order/order.routes')
 const userRoutes = require('./api/user/user.routes')
 const authRoutes = require('./api/auth/auth.routes')
+const { setupSocketAPI } = require('./services/socket.service')
 
 app.use('/api/stay', stayRoutes)
 app.use('/api/order', orderRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoutes)
+setupSocketAPI(http)
 
 app.get('/**', (_: any, res: any) => {
       res.sendFile(path.join(__dirname, 'public', 'index.html'))
