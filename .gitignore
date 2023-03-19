@@ -10,6 +10,9 @@ node_modules
 # testing
 /coverage
 
+#debug
+/logs/backend.log
+
 # production
 /build
 

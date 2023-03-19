@@ -2704,3 +2704,12 @@
 19.3.2023, 16:41:30 - INFO - Server is running on port: 3030 
 19.3.2023, 16:41:42 - DEBUG - Getting stays 
 19.3.2023, 16:41:42 - INFO - New connected socket [id: 02FxiFdAfB4ChZz4AAAB] 
+19.3.2023, 16:58:52 - DEBUG - Getting stays 
+19.3.2023, 17:02:44 - DEBUG - Getting stays 
+19.3.2023, 17:02:58 - DEBUG - auth.service - login with username: ofer 
+19.3.2023, 17:02:58 - INFO - User login:  | {"_id":"64109116d36d072768162be5","username":"ofer","fullname":"ofer","imgUrl":"https://res.cloudinary.com/dcwibf9o5/image/upload/v1678807314/txya7hte8elu2yyywdjn.png"} 
+19.3.2023, 17:02:58 - DEBUG - Getting stays 
+19.3.2023, 19:44:04 - INFO - Socket disconnected [id: undefined] 
+19.3.2023, 19:44:04 - DEBUG - Getting stays 
+19.3.2023, 19:44:04 - INFO - New connected socket [id: mY_pIwcu0iocAGWZAAAD] 
+19.3.2023, 19:44:05 - DEBUG - Getting stays 
