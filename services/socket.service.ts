@@ -6,19 +6,6 @@ var gIo: any = null
 module.exports = {
       // set up the sockets service and define the API
       setupSocketAPI,
-      // emit to everyone / everyone in a specific room (label)
-      
-      // emitTo,
-      
-      // emit to a specific user (if currently active in system)
-      
-      // emitToUser,
-
-      // Send to all sockets BUT not the current socket - if found
-      // (otherwise broadcast to a room / to all)
-      
-      // broadcast,
-
 }
 
 function setupSocketAPI(http: string) {
@@ -48,6 +35,5 @@ function setupSocketAPI(http: string) {
                   logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
                   delete socket.userId
             })
-
       })
 }
