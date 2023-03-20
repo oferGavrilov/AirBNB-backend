@@ -1,6 +1,7 @@
 import { ObjectId } from "mongodb"
 import { User } from "../../models/user.model"
 var dbService = require('../../services/db.service')
+var logger = require('../../services/logger.service')
 
 async function query() {
       try {
@@ -22,13 +23,25 @@ async function getById(userId: string) {
             const collection = await dbService.getCollection('user')
             const user = await collection.findOne({ _id: new ObjectId(userId) })
             delete user.password
-
             return user
       } catch (err) {
             logger.error(`while finding user by id: ${userId}`, err)
             throw err
       }
 }
+
+async function getByIdWithPassword(userId: string) {
+      try {
+            const collection = await dbService.getCollection('user')
+            const user = await collection.findOne({ _id: new ObjectId(userId) })
+            return user
+      } catch (err) {
+            logger.error(`while finding user by id: ${userId}`, err)
+            throw err
+      }
+
+}
+
 async function getByUsername(username: string) {
       try {
             const collection = await dbService.getCollection('user')
@@ -40,11 +53,13 @@ async function getByUsername(username: string) {
       }
 }
 
-async function update(user:User) {
+async function update(user: User) {
       try {
-            const userToSave = {...user}
+            const userToSave: any = { ...user }
+            delete userToSave._id
             const collection = await dbService.getCollection('user')
-            await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
+            await collection.updateOne({ _id: new ObjectId(user._id) }, { $set: userToSave })
+            delete userToSave.password
             return userToSave
       } catch (err) {
             logger.error(`cannot update user ${user._id}`, err)
@@ -52,9 +67,9 @@ async function update(user:User) {
       }
 }
 
-async function add(user:User) {
+async function add(user: User) {
       try {
-            const userToAdd = {...user}
+            const userToAdd = { ...user }
             const collection = await dbService.getCollection('user')
             await collection.insertOne(userToAdd)
             return userToAdd
@@ -69,5 +84,6 @@ module.exports = {
       add,
       update,
       getById,
-      getByUsername
+      getByUsername,
+      getByIdWithPassword
 }

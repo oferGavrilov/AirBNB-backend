@@ -21,19 +21,28 @@ function setupSocketAPI(http: string) {
             })
             socket.on('order-coming-event', (order: Order) => {
                   logger.info(`New order invite from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
-                  gIo.emit('order-coming-emit', (order))
+                  gIo.to(order.host._id).emit('order-coming-emit', (order))
             })
             socket.on('order-update-event', (order: Order) => {
                   logger.info(`New order status update from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
-                  gIo.emit('order-update-emit', (order))
+                  gIo.to(order.buyer._id).emit('order-update-emit', (order))
             })
             socket.on('set-user-socket', (userId:string) => {
                   logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
+                  socket.join(userId)
                   socket.userId = userId
             })
             socket.on('unset-user-socket', () => {
                   logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
+                  socket.leave(socket.userId)
                   delete socket.userId
             })
       })
+      // socket.on('chat-set-topic', topic => {
+      //       if (socket.myTopic === topic) return
+      //       if (socket.myTopic) {
+      //           logger.info(`Socket is leaving topic ${socket.myTopic} [id: ${socket.id}]`)
+      //       }
+      //       socket.myTopic = topic
+      //   })
 }
