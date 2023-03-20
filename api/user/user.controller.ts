@@ -15,8 +15,6 @@ async function getUser(req: any, res: any) {
 async function updateUser(req: any, res: any) {
     try {
         const user = req.body
-        const fullUser = await userService.getByIdWithPassword(user._id)
-        user.password = fullUser.password
         const updatedUser = await userService.update(user)
         res.send(updatedUser)
     } catch (err) {

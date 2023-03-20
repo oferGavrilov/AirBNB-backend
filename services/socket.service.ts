@@ -38,11 +38,4 @@ function setupSocketAPI(http: string) {
                   delete socket.userId
             })
       })
-      // socket.on('chat-set-topic', topic => {
-      //       if (socket.myTopic === topic) return
-      //       if (socket.myTopic) {
-      //           logger.info(`Socket is leaving topic ${socket.myTopic} [id: ${socket.id}]`)
-      //       }
-      //       socket.myTopic = topic
-      //   })
 }

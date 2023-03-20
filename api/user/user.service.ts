@@ -30,18 +30,6 @@ async function getById(userId: string) {
       }
 }
 
-async function getByIdWithPassword(userId: string) {
-      try {
-            const collection = await dbService.getCollection('user')
-            const user = await collection.findOne({ _id: new ObjectId(userId) })
-            return user
-      } catch (err) {
-            logger.error(`while finding user by id: ${userId}`, err)
-            throw err
-      }
-
-}
-
 async function getByUsername(username: string) {
       try {
             const collection = await dbService.getCollection('user')
@@ -59,8 +47,7 @@ async function update(user: User) {
             delete userToSave._id
             const collection = await dbService.getCollection('user')
             await collection.updateOne({ _id: new ObjectId(user._id) }, { $set: userToSave })
-            delete userToSave.password
-            return userToSave
+            return user
       } catch (err) {
             logger.error(`cannot update user ${user._id}`, err)
             throw err
@@ -84,6 +71,5 @@ module.exports = {
       add,
       update,
       getById,
-      getByUsername,
-      getByIdWithPassword
+      getByUsername
 }
