@@ -4,6 +4,6 @@ var router = express.Router()
 
 router.get('/', orderController.getOrders)
 router.post('/', orderController.addOrder)
-router.put('/:orderId', orderController.updateOrder)
+router.put('/', orderController.updateOrder)
 
 module.exports = router
