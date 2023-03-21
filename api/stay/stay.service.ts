@@ -63,6 +63,7 @@ function _filter(stays: Stay[], filterBy: StayFilter) {
 }
 
 function _buildCriteria(filterBy: StayFilter) {
+    console.log(filterBy)
     const criteria: any = {}
     if (filterBy?.place) {
         criteria['loc.address'] = { $regex: filterBy.place, $options: 'i' }
