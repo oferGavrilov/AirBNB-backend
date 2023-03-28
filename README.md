@@ -4,6 +4,6 @@ In this project built with the following technologies like Node.js, express sock
 
 To navigate to the front end repository [Front end repository](https://github.com/oferGavrilov/AirBNB-clone)
 
-To navigate to the app in render [Link to project in render](https://airbnb-rktw.onrender.com/#/)
+To navigate to the app in render [Link to project in render](https://airpnp.azurewebsites.net/)
 
 Enjoy.
