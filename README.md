@@ -6,6 +6,6 @@ This project deployed to Azure.
 
 To navigate to the front end repository [Front end repository](https://github.com/oferGavrilov/AirBNB-clone)
 
-To navigate to the app in render [Link to project in Azure](https://airpnp.azurewebsites.net/) {:target="_blank"}
+To navigate to the app in render [Link to project in Azure](https://airpnp.azurewebsites.net/)
 
 Enjoy.
