@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "mocha",
     "start": "nodemon --ignore \"./data\" server.ts",
     "dev": "nodemon --ignore \"./data\" server.ts"
   },
