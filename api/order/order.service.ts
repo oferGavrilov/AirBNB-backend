@@ -56,7 +56,7 @@ function _buildCriteria(filterBy: FilterOrder) {
       if (filterBy?.hostId) criteria['host._id'] = filterBy.hostId
       if (filterBy?.buyerId) criteria['buyer._id'] = filterBy.buyerId
       if (filterBy?.status) criteria.status = filterBy.status
-      if (filterBy?.stayName) criteria['stay.name'] = filterBy.stayName
+      if (filterBy?.stayName) criteria['stay.name'] = filterBy.stayName.replace(/amp;/g, '&')
       if (filterBy?.hostName) criteria['host.fullname'] = filterBy.hostName
       if (filterBy?.totalPrice) criteria.totalPrice = filterBy.totalPrice
       return criteria
