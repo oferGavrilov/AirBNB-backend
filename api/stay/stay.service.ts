@@ -51,17 +51,6 @@ async function update(stay: Stay) {
     }
 }
 
-function _filter(stays: Stay[], filterBy: StayFilter) {
-    if (filterBy.likeByUser) stays = stays.filter(stay => stay.likedByUsers.includes(filterBy.likeByUser))
-    if (filterBy.hostId) stays = stays.filter(stay => stay.host._id === filterBy.hostId)
-    if (filterBy.label) stays = stays.filter(stay => stay.labels?.includes(filterBy.label))
-    if (filterBy.place) {
-        const regex = new RegExp(filterBy.place, 'i')
-        stays = stays.filter(stay => regex.test(stay.loc.address))
-    }
-    return stays
-}
-
 function _buildCriteria(filterBy: StayFilter) {
     console.log(filterBy)
     const criteria: any = {}
@@ -76,6 +65,9 @@ function _buildCriteria(filterBy: StayFilter) {
     }
     if (filterBy?.hostId) {
         criteria['host._id'] = filterBy.hostId
+    }
+    if(filterBy?.isPetAllowed === 'true') {
+        criteria.amenities = { $in: ['Pets allowed'] }
     }
     return criteria
 }
