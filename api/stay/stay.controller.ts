@@ -4,12 +4,26 @@ var logger = require('../../services/logger.service')
 async function getStays(req: any, res: any) {
       try {
             const filterBy = req.query
+            const index = +req.query.page
+            console.log('index', index)
             logger.debug('Getting stays')
-            const stays = await stayService.query(filterBy) 
+            const stays = await stayService.query(filterBy , index)
             res.json(stays)
       } catch (err) {
             logger.error('Failed to get stays', err)
             res.status(500).send({ err: 'Failed to get stays' })
+      }
+}
+
+async function getStaysLength(req: any, res: any) {
+      try {
+            const filterBy = req.query
+            logger.debug('Getting stays length')
+            const stays = await stayService.staysLength(filterBy)
+            res.json(stays)
+      } catch (err) {
+            logger.error('Failed to get stays length', err)
+            res.status(500).send({ err: 'Failed to get stays length' })
       }
 }
 
@@ -46,8 +60,11 @@ async function updateStay(req: any, res: any) {
       }
 }
 
+
+
 module.exports = {
       getStays,
+      getStaysLength,
       getStayById,
       addStay,
       updateStay,

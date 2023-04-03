@@ -3,13 +3,26 @@ import { Stay, StayFilter } from "../../models/stay.model"
 var dbService = require('../../services/db.service')
 var ObjectId = require('mongodb').ObjectId
 var logger = require('../../services/logger.service')
+const STAY_INCREMENT = 20
 
-async function query(filterBy: StayFilter) {
+async function query(filterBy: StayFilter, index: number) {
     try {
         const criteria = _buildCriteria(filterBy)
         const collection = await dbService.getCollection('stay')
         const stays = await collection.find(criteria).toArray()
-        return stays
+        return stays.slice(STAY_INCREMENT * index, STAY_INCREMENT * index + STAY_INCREMENT)
+    } catch (err) {
+        logger.error('cannot find stays', err)
+        throw err
+    }
+}
+
+async function staysLength(filterBy: StayFilter) {
+    try {
+        const criteria = _buildCriteria(filterBy)
+        const collection = await dbService.getCollection('stay')
+        const stays = await collection.find(criteria).toArray()
+        return stays.length
     } catch (err) {
         logger.error('cannot find stays', err)
         throw err
@@ -66,7 +79,7 @@ function _buildCriteria(filterBy: StayFilter) {
     if (filterBy?.hostId) {
         criteria['host._id'] = filterBy.hostId
     }
-    if(filterBy?.isPetAllowed === 'true') {
+    if (filterBy?.isPetAllowed === 'true') {
         criteria.amenities = { $in: ['Pets allowed'] }
     }
     return criteria
@@ -74,6 +87,7 @@ function _buildCriteria(filterBy: StayFilter) {
 
 module.exports = {
     query,
+    staysLength,
     getById,
     add,
     update,
