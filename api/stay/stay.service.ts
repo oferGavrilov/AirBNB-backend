@@ -65,7 +65,6 @@ async function update(stay: Stay) {
 }
 
 function _buildCriteria(filterBy: StayFilter) {
-    console.log(filterBy)
     const criteria: any = {}
     if (filterBy?.place) {
         criteria['loc.address'] = { $regex: filterBy.place, $options: 'i' }
