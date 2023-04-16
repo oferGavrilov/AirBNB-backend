@@ -5,7 +5,6 @@ async function getStays(req: any, res: any) {
       try {
             const filterBy = req.query
             const index = +req.query.page
-            console.log('index', index)
             logger.debug('Getting stays')
             const stays = await stayService.query(filterBy , index)
             res.json(stays)
