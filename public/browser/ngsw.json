@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1681992781681,
+  "timestamp": 1681998121442,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/195.57fda6f98ace927c.js",
+        "/195.d3f44537177c2b7c.js",
         "/favicon.ico",
         "/index.html",
-        "/main.d7f6827483423db6.js",
+        "/main.9b49ab6850fc345d.js",
         "/polyfills.f23ceb9234adab08.js",
-        "/runtime.7faae4bddcdc53f1.js",
-        "/styles.aa5668dde2a4aa9f.css"
+        "/runtime.061e33b3f7db5ed7.js",
+        "/styles.83a3f182b6cbedfb.css"
       ],
       "patterns": []
     },
@@ -116,7 +116,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/195.57fda6f98ace927c.js": "283ec59c850c2332ab2343abce50cd91c291858e",
+    "/195.d3f44537177c2b7c.js": "848d28ccbd4b25676fc4efb9dbe9563bea9f23ef",
     "/assets/i18n/ar.json": "087b834f0776a15b45bfb37e559529a3fb7a2160",
     "/assets/i18n/de.json": "78f88b8adce82c6465cbae2f54f2f391e3042717",
     "/assets/i18n/en.json": "70789091fabb2390deb0e02c856f9482fe02b512",
@@ -197,13 +197,13 @@
     "/assets/styles/setup/_layout.scss": "2f9f9f8fa954ae835bd2767343f920fa164a5d25",
     "/assets/styles/setup/_mixins.scss": "a8f39206d7976a33505575566795a156212fcf42",
     "/assets/styles/setup/_variables.scss": "d56d0c51f6a3456142f660a73ed245aa7bf3920f",
-    "/assets/styles/styles.scss": "84b6f33725b2f43fc11338a4b571c03e613bbcc7",
+    "/assets/styles/styles.scss": "6f0ff317a26b2c3735e9f6f5e227c54babad43d8",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "3bf7d67c3a02a5f578fcca1fa1ca4f446d4b1807",
-    "/main.d7f6827483423db6.js": "040c3e7c96a24e0e232b58adff32404e5ac382c5",
+    "/index.html": "bdc30357a7dd7f0b427d3bcb6597b6638d870025",
+    "/main.9b49ab6850fc345d.js": "8ac4a2c093d15d4d74599d13566a808b9c10a2f6",
     "/polyfills.f23ceb9234adab08.js": "0d5b355fd78bc9dd1ab90c920799584bb14cfa4e",
-    "/runtime.7faae4bddcdc53f1.js": "30b490e3739ecfc6327f430118b5fc89bc5e288f",
-    "/styles.aa5668dde2a4aa9f.css": "a2532d3847fad355795327dffa055bff693b04f4"
+    "/runtime.061e33b3f7db5ed7.js": "0db83709247b7f9bdc4eb9c66fabc7c2088a713b",
+    "/styles.83a3f182b6cbedfb.css": "a4274ed27c082c2cdb8ea294d9473d8e7896d352"
   },
   "navigationUrls": [
     {
