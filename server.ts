@@ -1,12 +1,14 @@
 import express from 'express'
 const cors = require('cors')
 const app = express()
+const compression = require('compression')
 const cookieParser = require('cookie-parser')
 const path = require('path')
 
 app.use(express.static('public'))
 app.use(cookieParser())
 app.use(express.json())
+app.use(compression())
 const http = require('http').createServer(app)
 
 if (process.env.NODE_ENV === 'production') {
