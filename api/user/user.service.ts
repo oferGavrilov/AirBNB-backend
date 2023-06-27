@@ -1,17 +1,17 @@
-import { ObjectId } from "mongodb"
+import { ObjectId } from 'mongodb';
 import { User } from "../../models/user.model"
-var dbService = require('../../services/db.service')
-var logger = require('../../services/logger.service')
-
+import { dbService } from '../../services/db.service'
+import { logger } from '../../services/logger.service'
+    
 async function query() {
       try {
             const collection = await dbService.getCollection('user')
-            var users: User[] = await collection.find().toArray()
-            users = users.map(user => {
+            const users: User[] = await collection.find().toArray() as User[]
+            const sanitizedUsers = users.map(user => {
                   delete user.password
                   return user
             })
-            return users
+            return sanitizedUsers
       } catch (err) {
             logger.error('cannot find users', err)
             throw err
@@ -22,7 +22,7 @@ async function getById(userId: string) {
       try {
             const collection = await dbService.getCollection('user')
             const user = await collection.findOne({ _id: new ObjectId(userId) })
-            delete user.password
+            if(user) delete user.password
             return user
       } catch (err) {
             logger.error(`while finding user by id: ${userId}`, err)
@@ -66,7 +66,7 @@ async function add(user: User) {
       }
 }
 
-module.exports = {
+export const userService = {
       query,
       add,
       update,

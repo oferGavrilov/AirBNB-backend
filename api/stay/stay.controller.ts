@@ -1,10 +1,12 @@
-const stayService = require('./stay.service.ts')
-var logger = require('../../services/logger.service')
+import { stayService } from './stay.service'
+import { logger } from '../../services/logger.service'
+import { Request, Response } from 'express'
+import { StayFilter } from '../../models/stay.model'
 
-async function getStays(req: any, res: any) {
+async function getStays(req: Request, res: Response) {
       try {
-            const filterBy = req.query
-            const index = +req.query.page
+            const filterBy = req.query as StayFilter
+            const index = req.query.page ? +req.query.page : 0
             logger.debug('Getting stays')
             const stays = await stayService.query(filterBy , index)
             res.json(stays)
@@ -14,9 +16,9 @@ async function getStays(req: any, res: any) {
       }
 }
 
-async function getStaysLength(req: any, res: any) {
+async function getStaysLength(req: Request, res: Response) {
       try {
-            const filterBy = req.query
+            const filterBy = req.query as StayFilter
             logger.debug('Getting stays length')
             const stays = await stayService.staysLength(filterBy)
             res.json(stays)
@@ -26,7 +28,7 @@ async function getStaysLength(req: any, res: any) {
       }
 }
 
-async function getStayById(req: any, res: any) {
+async function getStayById(req: Request, res: Response) {
       try {
             const stayId = req.params.stayId
             const stay = await stayService.getById(stayId)
@@ -37,7 +39,7 @@ async function getStayById(req: any, res: any) {
       }
 }
 
-async function addStay(req: any, res: any) {
+async function addStay(req: Request, res: Response) {
       try {
             const stay = req.body
             const addedStay = await stayService.add(stay)
@@ -48,7 +50,7 @@ async function addStay(req: any, res: any) {
       }
 }
 
-async function updateStay(req: any, res: any) {
+async function updateStay(req: Request, res: Response) {
       try {
             const stay = req.body
             const updatedStay = await stayService.update(stay)
@@ -61,7 +63,7 @@ async function updateStay(req: any, res: any) {
 
 
 
-module.exports = {
+export const stayController = {
       getStays,
       getStaysLength,
       getStayById,

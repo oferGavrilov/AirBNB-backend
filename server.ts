@@ -1,9 +1,11 @@
-import express from 'express'
-const cors = require('cors')
+import express, {Request, Response} from 'express'
+import cors from 'cors'
+import compression from 'compression'
+import cookieParser from 'cookie-parser'
+import path from 'path'
+import { logger } from './services/logger.service'
+import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware'
 const app = express()
-const compression = require('compression')
-const cookieParser = require('cookie-parser')
-const path = require('path')
 
 app.use(express.static('public'))
 app.use(cookieParser())
@@ -21,23 +23,22 @@ if (process.env.NODE_ENV === 'production') {
       app.use(cors(corsOptions))
 }
 
-const stayRoutes = require('./api/stay/stay.routes')
-const orderRoutes = require('./api/order/order.routes')
-const userRoutes = require('./api/user/user.routes')
-const authRoutes = require('./api/auth/auth.routes')
-const { setupSocketAPI } = require('./services/socket.service')
-
+import { router as stayRoutes } from './api/stay/stay.routes'
+import { router as orderRoutes } from './api/order/order.routes'
+import { router as userRoutes } from './api/user/user.routes'
+import { router as authRoutes } from './api/auth/auth.routes'
+import { setupSocketAPI } from './services/socket.service'
+app.all('*', setupAsyncLocalStorage)
 app.use('/api/stay', stayRoutes)
 app.use('/api/order', orderRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoutes)
 setupSocketAPI(http)
 
-app.get('/**', (_: any, res: any) => {
+app.get('/**', (_: Request, res: Response) => {
       res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
-var logger = require('./services/logger.service')
 const port = process.env.PORT || 3030
 http.listen(port, () => {
       logger.info('Server is running on port: ' + port)

@@ -84,7 +84,7 @@ function _buildCriteria(filterBy: StayFilter) {
     return criteria
 }
 
-module.exports = {
+export const stayService = {
     query,
     staysLength,
     getById,

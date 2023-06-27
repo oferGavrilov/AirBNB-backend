@@ -1,6 +1,7 @@
+import { ObjectId } from "mongodb"
 
 export interface Order {
-  _id: string,
+  _id?: ObjectId,
   buyer: {
     _id: string,
     fullname: string
@@ -21,13 +22,13 @@ export interface Order {
   status: string
 }
 export interface FilterOrder {
-  hostId: string
-  buyerId: string
-  status: string
-  stayName: string
-  hostName: string
-  totalPrice: number
-  term: string
+  hostId?: string
+  buyerId?: string
+  status?: string
+  stayName?: string
+  hostName?: string
+  totalPrice?: number
+  term?: string
 }
 
 export interface Guest {

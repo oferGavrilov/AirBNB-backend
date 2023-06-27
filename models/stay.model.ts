@@ -62,9 +62,9 @@ export interface StatReviews {
 }
 
 export interface StayFilter {
-    likeByUser: string,
-    place: string,
-    label: string,
-    hostId: string,
-    isPetAllowed: string
+    likeByUser?: string,
+    place?: string,
+    label?: string,
+    hostId?: string,
+    isPetAllowed?: string
 } 

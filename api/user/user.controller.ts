@@ -1,8 +1,9 @@
-var userService = require('./user.service.ts')
-var logger = require('../../services/logger.service')
+import { userService } from './user.service'
+import { logger } from '../../services/logger.service'
+import { Request, Response } from 'express'
 
 
-async function getUser(req: any, res: any) {
+async function getUser(req: Request, res: Response) {
     try {
         const user = await userService.getById(req.params.userId)
         res.send(user)
@@ -12,7 +13,7 @@ async function getUser(req: any, res: any) {
     }
 }
 
-async function updateUser(req: any, res: any) {
+async function updateUser(req: Request, res: Response) {
     try {
         const user = req.body
         const updatedUser = await userService.update(user)
@@ -23,7 +24,7 @@ async function updateUser(req: any, res: any) {
     }
 }
 
-module.exports = {
+export const userController = {
     getUser,
     updateUser
 }

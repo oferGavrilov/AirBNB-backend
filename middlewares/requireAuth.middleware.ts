@@ -1,18 +1,10 @@
 import { NextFunction, Request, Response } from "express"
+import { config } from '../config'
+import { asyncLocalStorage } from '../services/als.service'
+import { AuthRequest } from "../models/user.model"
 
-var config = require('../config')
-var asyncLocalStorage = require('../services/als.service')
-
-interface IRequest extends Request {
-      loggedinUser: {
-            _id: string,
-            fullname: string,
-      }
-}
-
-function requireAuth (req: IRequest, res: Response, next: NextFunction) {
-      const { loggedinUser } = asyncLocalStorage.getStore()
-
+export function requireAuth (req: AuthRequest, res: Response, next: NextFunction) {
+      const loggedinUser = asyncLocalStorage.getStore() as { loggedinUser?: AuthRequest }
       if (config.isGuestMode && !loggedinUser) {
             req.loggedinUser = { _id: '', fullname: 'Guest' }
             return next()
@@ -21,6 +13,3 @@ function requireAuth (req: IRequest, res: Response, next: NextFunction) {
       next()
 }
 
-module.exports = {
-      requireAuth,
-}

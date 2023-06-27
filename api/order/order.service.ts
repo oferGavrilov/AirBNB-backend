@@ -1,8 +1,8 @@
-const dbService = require('../../services/db.service')
+import { dbService } from '../../services/db.service'
 import { ObjectId } from 'mongodb'
 import { FilterOrder } from '../../models/order.model'
-const Order = require('../.././models/order.model')
-var logger = require('../../services/logger.service')
+import { Order } from '../.././models/order.model'
+import { logger } from '../../services/logger.service'
 
 async function query(filterBy: FilterOrder) {
       try {
@@ -16,7 +16,7 @@ async function query(filterBy: FilterOrder) {
       }
 }
 
-async function add(order: typeof Order) {
+async function add(order: Order) {
       try {
             const collection = await dbService.getCollection('order')
             await collection.insertOne(order)
@@ -27,7 +27,7 @@ async function add(order: typeof Order) {
       }
 }
 
-async function update(order: typeof Order) {
+async function update(order: Order) {
       try {
             const orderToSave = { ...order }
             delete orderToSave._id
@@ -62,8 +62,8 @@ function _buildCriteria(filterBy: FilterOrder) {
       return criteria
 }
 
-module.exports = {
+export const orderService = {
       query,
       add,
-      update,
+      update
 }

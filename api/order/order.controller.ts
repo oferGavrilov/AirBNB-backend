@@ -1,10 +1,12 @@
-const orderService = require('./order.service.ts')
-var logger = require('../../services/logger.service')
+import { orderService } from './order.service'
+import { logger } from '../../services/logger.service'
+import { Request, Response } from 'express'
+import { FilterOrder } from '../../models/order.model'
 
-async function getOrders(req: any, res: any) {
+async function getOrders(req: Request, res: Response) {
       try {
             logger.debug('Getting orders')
-            const filterBy = req.query
+            const filterBy = req.query as FilterOrder
             const orders = await orderService.query(filterBy) 
             res.json(orders)
       } catch (err) {
@@ -13,7 +15,7 @@ async function getOrders(req: any, res: any) {
       }
 }
 
-async function addOrder(req: any, res: any) {
+async function addOrder(req: Request, res: Response) {
       try {
             const order = req.body
             const addedOrder = await orderService.add(order)
@@ -24,7 +26,7 @@ async function addOrder(req: any, res: any) {
       }
 }
 
-async function updateOrder(req: any, res: any) {
+async function updateOrder(req: Request, res: Response) {
       try {
             const order = req.body
             const updatedOrder = await orderService.update(order)
@@ -35,7 +37,7 @@ async function updateOrder(req: any, res: any) {
       }
 }
 
-module.exports = {
+export const orderController = {
       getOrders,
       addOrder,
       updateOrder,

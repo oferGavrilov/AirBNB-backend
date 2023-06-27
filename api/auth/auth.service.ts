@@ -1,26 +1,19 @@
+import Cryptr from 'cryptr'
+import bcrypt from 'bcrypt'
 import { User } from "../../models/user.model"
-const Cryptr = require('cryptr')
-const bcrypt = require('bcrypt')
+import { userService } from '../user/user.service'
+import { logger } from '../../services/logger.service'
 const cryptr = new Cryptr(process.env.SECRET1 || 'Secret-Puk-1234')
 
-var userService = require('../user/user.service')
-var logger = require('../../services/logger.service')
-
-module.exports = {
-      signup,
-      login,
-      getLoginToken,
-      validateToken
-}
 
 async function login(username: string, password: string) {
       logger.debug(`auth.service - login with username: ${username}`)
-      const users: User[] = await userService.getByUsername(username)
+      const users: User[] = await userService.getByUsername(username) as User[]
       if (!users.length) return Promise.reject('Invalid username or password')
-      const match = users.find(async (user) => await bcrypt.compare(password, user.password))
+      const match = users.find(async (user) => bcrypt.compare(password, user.password as string))
       if (!match) return Promise.reject('Invalid username or password')
       delete match.password
-      match._id = match._id.toString()
+      match._id = match._id
       return match
 }
 
@@ -49,4 +42,11 @@ function validateToken(loginToken: string) {
             console.log('Invalid login token')
       }
       return null
+}
+
+export const authService = {
+      signup,
+      login,
+      getLoginToken,
+      validateToken
 }
