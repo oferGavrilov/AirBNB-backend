@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #878787 #D9D9D9;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        cursor: pointer;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #D9D9D9;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 25px;
+        background-color: #A6A5A5;
+        cursor: pointer;
+    }
+}
+
+body {
+    font-family: $main-font;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cdk-overlay-container {
+    position: fixed !important;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 100;
+
+    .cdk-global-overlay-wrapper {
+        align-items: unset !important;
+    }
+
+    .mat-mdc-snack-bar-container {
+        .mdc-snackbar__surface {
+            background-color: $secondary-color;
+        }
+
+        @include for-mobile-layout {
+            width: 90vw;
+        }
+    }
+
+
+    span {
+        color: white;
+    }
+
+}
+
+.green-snackbar {
+    background: rgb(65, 252, 134);
+    color: white;
+}
+
+.green-snackbar button {
+    background-color: rgb(65, 252, 134);
+    color: white;
+    border: none;
+}
+
+.red-snackbar {
+    background: #F44336;
+    color: white;
+}
+
+.red-snackbar button {
+    background-color: #F44336;
+    color: white !important;
+    border: none;
+}

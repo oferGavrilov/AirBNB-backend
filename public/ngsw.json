@@ -1,0 +1,178 @@
+{
+  "configVersion": 1,
+  "timestamp": 1687878120437,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/195.414e1e73823804ab.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.e0816587cb91d0d7.js",
+        "/polyfills.f23ceb9234adab08.js",
+        "/runtime.ddaf9e1f3a1a9269.js",
+        "/styles.4192927955b16000.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/i18n/ar.json",
+        "/assets/i18n/de.json",
+        "/assets/i18n/en.json",
+        "/assets/i18n/es.json",
+        "/assets/i18n/fr.json",
+        "/assets/i18n/he.json",
+        "/assets/i18n/it.json",
+        "/assets/i18n/ru.json",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/readme/about-us.png",
+        "/assets/img/readme/add-stay1.png",
+        "/assets/img/readme/add-stay2.png",
+        "/assets/img/readme/home-page1.png",
+        "/assets/img/readme/home-page2.png",
+        "/assets/img/readme/stay-details1.png",
+        "/assets/img/readme/stay-details2.png",
+        "/assets/img/readme/stay-details3.png",
+        "/assets/img/readme/stay-details4.png",
+        "/assets/img/readme/stay-filter1.png",
+        "/assets/img/readme/stay-filter2.png",
+        "/assets/img/readme/stay-filter3.png",
+        "/assets/img/readme/stay-index.png",
+        "/assets/img/readme/stay-login.png",
+        "/assets/img/readme/stay-mobile1.png",
+        "/assets/img/readme/stay-mobile2.png",
+        "/assets/img/readme/stay-mobile3.png",
+        "/assets/img/readme/stay-translate.png",
+        "/assets/img/readme/stay-user1.png",
+        "/assets/img/readme/stay-user2.png",
+        "/assets/img/readme/stay-user3.png",
+        "/assets/img/readme/user-wishlist.png",
+        "/assets/img/user/approve.png",
+        "/assets/img/user/decline.png",
+        "/assets/img/user/pending.png",
+        "/assets/styles/base/_basics.scss",
+        "/assets/styles/base/_buttons.scss",
+        "/assets/styles/base/_helpers.scss",
+        "/assets/styles/setup/_function.scss",
+        "/assets/styles/setup/_layout.scss",
+        "/assets/styles/setup/_mixins.scss",
+        "/assets/styles/setup/_variables.scss",
+        "/assets/styles/styles.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api",
+      "patterns": [
+        "http:\\/\\/localhost:4200"
+      ],
+      "strategy": "performance",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/195.414e1e73823804ab.js": "b528eaee15923a68676b47e61c0e950e42a4c254",
+    "/assets/i18n/ar.json": "087b834f0776a15b45bfb37e559529a3fb7a2160",
+    "/assets/i18n/de.json": "78f88b8adce82c6465cbae2f54f2f391e3042717",
+    "/assets/i18n/en.json": "262cdb3095a7672acbb7acbfbc2d98250ac8bdf9",
+    "/assets/i18n/es.json": "6c4d752be544d74864446d6c17cdd867c10a49d0",
+    "/assets/i18n/fr.json": "ba8486a7cef9cb278a533d4abb30bb9a0486a9e2",
+    "/assets/i18n/he.json": "d22cdd84fd87ced929199a55bb063f22137347d0",
+    "/assets/i18n/it.json": "3d05cc3815effbe0809f9084a7592aee730e732a",
+    "/assets/i18n/ru.json": "e5d20e407223dca8b7d2c15061ba3ef835bafc53",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/img/readme/about-us.png": "d7cda7717252d7d6c31afa3a64246cd1412061dc",
+    "/assets/img/readme/add-stay1.png": "804e7c57208e92aed428739bbd0d10aec3186838",
+    "/assets/img/readme/add-stay2.png": "9385411f10a3bf502f5ab1c83edee2098bb49d59",
+    "/assets/img/readme/home-page1.png": "eb6b38fe8e98d172a6170d21d3ed0bb9c0aefad5",
+    "/assets/img/readme/home-page2.png": "637470d8174ae4327c825564588525e890b48972",
+    "/assets/img/readme/stay-details1.png": "8f0db9c17baca52a97a0b15ae076264fb3cb3670",
+    "/assets/img/readme/stay-details2.png": "07487344a1e93251b8452120f1983464ffdf22f5",
+    "/assets/img/readme/stay-details3.png": "e3773a01889c76ac36ef1840e027d81835064feb",
+    "/assets/img/readme/stay-details4.png": "3268ed2a354771d3375905f2c01eae09dd45cb6a",
+    "/assets/img/readme/stay-filter1.png": "4b03e41dd3fdf9c3dc1f1f9ff41bdb6b5226cbaf",
+    "/assets/img/readme/stay-filter2.png": "b0b134dd2568e14c92e82b165f798364d38ee16e",
+    "/assets/img/readme/stay-filter3.png": "54f75bafb2da67e6aae3811be6391a216e87d368",
+    "/assets/img/readme/stay-index.png": "7662a771d6b8c17e79e2b9adbd2ccc76408e717a",
+    "/assets/img/readme/stay-login.png": "1ee8483b51492c9301f46eb8a343396a4c8dc834",
+    "/assets/img/readme/stay-mobile1.png": "6901205bef7afe9bc6d0be6862d8d6f434db0c90",
+    "/assets/img/readme/stay-mobile2.png": "8211bc38955cf99ada6964baf277dd5a1a251f95",
+    "/assets/img/readme/stay-mobile3.png": "80334bba0cc8e8b6120b1106e85b531bc832e1d0",
+    "/assets/img/readme/stay-translate.png": "2290b6e96e609981c95a7a96270b522f12e82146",
+    "/assets/img/readme/stay-user1.png": "7ca2dadd903e645406d077308d4321bdc85b379e",
+    "/assets/img/readme/stay-user2.png": "a3329b3618089ee74a2dbe5070182bf998dcdeec",
+    "/assets/img/readme/stay-user3.png": "9f0b70733776f0392c8e38e93d8579a99d093f8c",
+    "/assets/img/readme/user-wishlist.png": "2f7c73f66fba95090649701f1cecc74c9785c513",
+    "/assets/img/user/approve.png": "a3b91e9a095be4a7d59419f3e29cdf3ae2cd8135",
+    "/assets/img/user/decline.png": "26fa9a8f3dbd335ce4d5e11c102301d6ea765a37",
+    "/assets/img/user/pending.png": "2ee9133cbd537f5aee226e56ac6c4ee5276305ab",
+    "/assets/styles/base/_basics.scss": "e178daa2de5426104eb551e676ac99127cbbb0df",
+    "/assets/styles/base/_buttons.scss": "8647fbba6c3123b7b7decb3e82a23b80aef49799",
+    "/assets/styles/base/_helpers.scss": "05bb3069d6643d0011d3ab72d4692f35de23d01e",
+    "/assets/styles/setup/_function.scss": "2135a7337c1e78ed7e13d94a4361288cda51d94a",
+    "/assets/styles/setup/_layout.scss": "2f9f9f8fa954ae835bd2767343f920fa164a5d25",
+    "/assets/styles/setup/_mixins.scss": "a8f39206d7976a33505575566795a156212fcf42",
+    "/assets/styles/setup/_variables.scss": "d56d0c51f6a3456142f660a73ed245aa7bf3920f",
+    "/assets/styles/styles.scss": "6f0ff317a26b2c3735e9f6f5e227c54babad43d8",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "4fcac40ef37f42a8c7650e41bb5bbbfb5c826b46",
+    "/main.e0816587cb91d0d7.js": "7dd196cddc8bb36db9f0ff5ec2d1f9ea1f58930d",
+    "/polyfills.f23ceb9234adab08.js": "0d5b355fd78bc9dd1ab90c920799584bb14cfa4e",
+    "/runtime.ddaf9e1f3a1a9269.js": "5daa518579e44139b1994ba7b5212909512d4fdf",
+    "/styles.4192927955b16000.css": "0317ed122cf58991d0612237d18588b1417584a5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
